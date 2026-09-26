@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>പുലരി // Pulari Arts & Sports Club — Official Portal</title>
+  <meta name="description"
+    content="Official Kerala Gateway for Pulari Arts & Sports Club. Fee Collection, Financial Accounts, and Member Records." />
+
+  <!-- Google Fonts: Manjari (Malayalam), Outfit, Plus Jakarta Sans, Syne -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manjari:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="PULARI.png" />
+</head>
+
+<body class="kerala-light-body">
+
+  <!-- Kasavu Golden Zari Top Ribbon -->
+  <div class="kasavu-border-top"></div>
+
+  <!-- Kerala Dawn Sunlit Canvas -->
+  <canvas id="keralaCanvas" class="kerala-canvas"></canvas>
+  <div class="kerala-ambient-sun"></div>
+
+  <!-- Decorative Kerala Background: Coconut Palm Tree (Left) -->
+  <div class="bg-art bg-coconut-tree" aria-hidden="true">
+    <svg viewBox="0 0 260 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="palmGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#15803d" stop-opacity="0.2" />
+          <stop offset="60%" stop-color="#c28815" stop-opacity="0.18" />
+          <stop offset="100%" stop-color="#eab308" stop-opacity="0.25" />
+        </linearGradient>
+      </defs>
+      <!-- Trunk -->
+      <path d="M50,400 Q80,240 130,130 Q120,130 65,400 Z" fill="url(#palmGrad)" />
+      <!-- Coconuts -->
+      <circle cx="126" cy="128" r="7" fill="url(#palmGrad)" />
+      <circle cx="138" cy="132" r="6" fill="url(#palmGrad)" />
+      <circle cx="132" cy="140" r="7" fill="url(#palmGrad)" />
+      <!-- Frond 1 (Top Left) -->
+      <path d="M130,130 Q80,70 10,95 Q70,90 130,130 Z" fill="url(#palmGrad)" />
+      <path d="M25,93 L15,108 M45,88 L38,105 M65,85 L60,103 M85,87 L82,104 M105,95 L104,112" stroke="url(#palmGrad)"
+        stroke-width="2.5" stroke-linecap="round" />
+      <!-- Frond 2 (Top Arch) -->
+      <path d="M130,130 Q130,30 85,10 Q120,45 130,130 Z" fill="url(#palmGrad)" />
+      <path d="M92,15 L80,25 M102,28 L92,42 M112,45 L104,60 M120,68 L114,84" stroke="url(#palmGrad)" stroke-width="2.5"
+        stroke-linecap="round" />
+      <!-- Frond 3 (Top Right) -->
+      <path d="M130,130 Q170,40 230,50 Q180,65 130,130 Z" fill="url(#palmGrad)" />
+      <path d="M220,53 L232,68 M198,58 L208,76 M178,66 L186,85 M158,80 L164,98" stroke="url(#palmGrad)"
+        stroke-width="2.5" stroke-linecap="round" />
+      <!-- Frond 4 (Far Left Droop) -->
+      <path d="M130,130 Q50,110 5,165 Q60,135 130,130 Z" fill="url(#palmGrad)" />
+      <path d="M12,160 L5,175 M32,145 L24,163 M55,135 L50,154 M80,130 L76,148" stroke="url(#palmGrad)"
+        stroke-width="2.5" stroke-linecap="round" />
+      <!-- Frond 5 (Right Droop) -->
+      <path d="M130,130 Q200,120 255,175 Q195,145 130,130 Z" fill="url(#palmGrad)" />
+      <path d="M248,170 L258,185 M225,152 L234,170 M200,140 L207,159 M175,133 L180,152" stroke="url(#palmGrad)"
+        stroke-width="2.5" stroke-linecap="round" />
+    </svg>
+  </div>
+
+  <!-- Decorative Kerala Background: Royal Peacock (Right) -->
+  <div class="bg-art bg-peacock" aria-hidden="true">
+    <svg viewBox="0 0 280 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="peacockGrad" x1="100%" y1="100%" x2="0%" y2="0%">
+          <stop offset="0%" stop-color="#0284c7" stop-opacity="0.22" />
+          <stop offset="50%" stop-color="#15803d" stop-opacity="0.18" />
+          <stop offset="100%" stop-color="#c28815" stop-opacity="0.25" />
+        </linearGradient>
+      </defs>
+      <!-- Crown Crest Feathers -->
+      <path d="M198,42 L206,20 M203,44 L216,24 M207,48 L224,32" stroke="url(#peacockGrad)" stroke-width="2"
+        stroke-linecap="round" />
+      <circle cx="206" cy="18" r="3.5" fill="url(#peacockGrad)" />
+      <circle cx="217" cy="22" r="3.5" fill="url(#peacockGrad)" />
+      <circle cx="225" cy="30" r="3.5" fill="url(#peacockGrad)" />
+      <!-- Head and Beak -->
+      <path
+        d="M210,54 Q205,42 195,44 Q182,46 186,60 Q188,72 178,92 Q168,112 165,135 Q160,170 178,205 Q195,235 215,245 Q210,215 200,185 Q190,155 198,125 Q205,100 205,75 Q214,64 210,54 Z"
+        fill="url(#peacockGrad)" />
+      <path d="M210,52 L225,56 L208,60 Z" fill="url(#peacockGrad)" />
+      <!-- Eye -->
+      <circle cx="198" cy="50" r="2.5" fill="#c28815" />
+      <!-- Wing Body -->
+      <path d="M175,150 Q130,170 100,220 Q75,270 70,340 Q105,320 135,275 Q165,230 180,185 Z" fill="url(#peacockGrad)" />
+      <!-- Flowing Tail Feathers with Eyes -->
+      <path d="M120,240 Q60,260 15,330 Q80,310 140,260 Z" fill="url(#peacockGrad)" />
+      <path d="M150,220 Q90,250 40,360 Q110,330 165,245 Z" fill="url(#peacockGrad)" />
+      <!-- Feather Eye Spots -->
+      <ellipse cx="45" cy="325" rx="10" ry="14" transform="rotate(-30 45 325)" stroke="url(#peacockGrad)"
+        stroke-width="2" />
+      <circle cx="45" cy="325" r="5" fill="url(#peacockGrad)" />
+      <ellipse cx="85" cy="295" rx="11" ry="15" transform="rotate(-25 85 295)" stroke="url(#peacockGrad)"
+        stroke-width="2" />
+      <circle cx="85" cy="295" r="5" fill="url(#peacockGrad)" />
+      <ellipse cx="65" cy="345" rx="10" ry="14" transform="rotate(-35 65 345)" stroke="url(#peacockGrad)"
+        stroke-width="2" />
+      <circle cx="65" cy="345" r="5" fill="url(#peacockGrad)" />
+      <ellipse cx="115" cy="265" rx="10" ry="14" transform="rotate(-20 115 265)" stroke="url(#peacockGrad)"
+        stroke-width="2" />
+      <circle cx="115" cy="265" r="5" fill="url(#peacockGrad)" />
+      <!-- Perch Branch -->
+      <path d="M150,240 Q190,260 250,270 Q190,265 140,245 Z" fill="url(#peacockGrad)" />
+    </svg>
+  </div>
+
+  <!-- Main Portal Layout -->
+  <div class="portal-wrapper">
+
+    <!-- Header Navigation -->
+    <header class="kerala-header">
+      <div class="brand-left">
+        <div class="club-logo-container">
+          <img src="PULARI.png" alt="Pulari Arts & Sports Club Logo" class="club-logo-img" />
+        </div>
+        <div class="brand-titles">
+          <span class="malayalam-eyebrow">പുലരി ആർട്സ് &amp; സ്പോർട്സ് ക്ലബ്ബ്</span>
+          <h1 class="english-title">Pulari Arts &amp; Sports Club</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Greeting -->
+    <section class="kerala-hero">
+      <h2 class="hero-heading">
+        നമസ്കാരം, <span class="gold-gradient-text">Welcome to Pulari</span>
+      </h2>
+    </section>
+
+    <!-- The 3 Kerala Gateway Cards -->
+    <main class="kerala-grid" id="keralaGrid">
+
+      <!-- ================= CARD 1: ADMIN FEE COLLECTION ================= -->
+      <article class="kerala-card card-kasavu-gold" data-id="admin"
+        data-keywords="admin fee collection monthly payments dues register login മാസവരി പിരിവ് subscription">
+        <div class="card-kasavu-header">
+          <div class="card-pill pill-gold">
+            <i class="fa-solid fa-user-shield"></i>
+            <span>ADMIN INTAKE • അഡ്മിൻ</span>
+          </div>
+          <span class="card-num-badge">01</span>
+        </div>
+
+        <div class="card-main-content">
+          <div class="kerala-icon-emblem icon-gold">
+            <i class="fa-solid fa-receipt"></i>
+          </div>
+
+          <div class="malayalam-subtitle">മാസവരി പിരിവ് പോർട്ടൽ</div>
+          <h3 class="card-english-title">Monthly Fee Collection</h3>
+
+          <p class="card-description">
+            Dedicated portal for authorized club administrators to collect monthly membership dues, record member
+            payments, and issue receipts.
+          </p>
+
+          <!-- Kasavu Details Pill Box -->
+          <div class="kerala-spec-box">
+            <div class="spec-item">
+              <span class="spec-label">ACCESS</span>
+              <span class="spec-value text-gold">Club Officials / Admin</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">PURPOSE</span>
+              <span class="spec-value">Collect &amp; Record Monthly Fees</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer-action">
+          <a href="https://pulariartsandsportsclub.github.io/membershipfees/" target="_blank" rel="noopener noreferrer"
+            class="kerala-btn btn-gold" id="btnAdmin">
+            <span>തുറക്കുക // Open Fee Portal [1]</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="kerala-copy-btn" data-url="https://pulariartsandsportsclub.github.io/membershipfees/"
+            title="Copy URL">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </div>
+      </article>
+
+      <!-- ================= CARD 2: CLUB ACCOUNTS & TREASURY ================= -->
+      <article class="kerala-card card-backwater-blue" data-id="finance"
+        data-keywords="finance accounts dashboard income expense records treasury profit loss budget balance വരവ് ചെലവ് കണക്കുകൾ">
+        <div class="card-kasavu-header">
+          <div class="card-pill pill-blue">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <span>FINANCE • കണക്കുകൾ</span>
+          </div>
+          <span class="card-num-badge">02</span>
+        </div>
+
+        <div class="card-main-content">
+          <div class="kerala-icon-emblem icon-blue">
+            <i class="fa-solid fa-chart-pie"></i>
+          </div>
+
+          <div class="malayalam-subtitle">വരവ്-ചെലവ് കണക്കുകൾ</div>
+          <h3 class="card-english-title">Club Accounts &amp; Treasury</h3>
+
+          <p class="card-description">
+            Comprehensive financial registry monitoring daily income, tournament expenditures, sponsor funds, event
+            budgets, and audited ledger reports.
+          </p>
+
+          <!-- Kasavu Details Pill Box -->
+          <div class="kerala-spec-box">
+            <div class="spec-item">
+              <span class="spec-label">ACCESS</span>
+              <span class="spec-value text-blue">Executive &amp; Finance Team</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">PURPOSE</span>
+              <span class="spec-value">Income &amp; Expense Tracker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer-action">
+          <a href="https://pulariartsandsportsclub.github.io/pularidashboard/" target="_blank" rel="noopener noreferrer"
+            class="kerala-btn btn-blue" id="btnFinance">
+            <span>തുറക്കുക // Open Treasury [2]</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="kerala-copy-btn" data-url="https://pulariartsandsportsclub.github.io/pularidashboard/"
+            title="Copy URL">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </div>
+      </article>
+
+      <!-- ================= CARD 3: MEMBER FEE DASHBOARD ================= -->
+      <article class="kerala-card card-palm-green" data-id="member"
+        data-keywords="member subscription dashboard public fee check months paid status records അംഗങ്ങൾ മെമ്പർ ക്ലിയറൻസ്">
+        <div class="card-kasavu-header">
+          <div class="card-pill pill-green">
+            <i class="fa-solid fa-users"></i>
+            <span>MEMBERS • അംഗങ്ങൾ</span>
+          </div>
+          <span class="card-num-badge">03</span>
+        </div>
+
+        <div class="card-main-content">
+          <div class="kerala-icon-emblem icon-green">
+            <i class="fa-solid fa-id-card-clip"></i>
+          </div>
+
+          <div class="malayalam-subtitle">അംഗങ്ങളുടെ വിവരങ്ങൾ &amp; സ്റ്റാറ്റസ്</div>
+          <h3 class="card-english-title">Member Fee Dashboard</h3>
+
+          <p class="card-description">
+            Self-service portal open for all club members to verify clearance status, check which months are paid, and
+            review active membership records.
+          </p>
+
+          <!-- Kasavu Details Pill Box -->
+          <div class="kerala-spec-box">
+            <div class="spec-item">
+              <span class="spec-label">ACCESS</span>
+              <span class="spec-value text-green">All Club Members &amp; Public</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">PURPOSE</span>
+              <span class="spec-value">Monthly Clearance Verification</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer-action">
+          <a href="https://pulariartsandsportsclub.github.io/membershipfees/dashboard.html" target="_blank"
+            rel="noopener noreferrer" class="kerala-btn btn-green" id="btnMember">
+            <span>തുറക്കുക // View Member Status [3]</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="kerala-copy-btn"
+            data-url="https://pulariartsandsportsclub.github.io/membershipfees/dashboard.html" title="Copy URL">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="kerala-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="PULARI.png" alt="Pulari Club Logo" class="footer-logo-img" />
+          </div>
+          <div>
+            <h4>പുലരി ആർട്സ് &amp; സ്പോർട്സ് ക്ലബ്ബ്</h4>
+            <p>Pulari Arts &amp; Sports Club — Kerala Community &amp; Sports Alliance (ESTD 1985).</p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <span class="active-status-badge">
+            <span class="status-dot"></span>
+            All Portals Active &amp; Verified
+          </span>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <span>&copy; <span id="yearKerala"></span> Pulari Arts &amp; Sports Club. All rights reserved.</span>
+        <span>Kerala Design Edition</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="keralaToastContainer" class="kerala-toast-holder"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
